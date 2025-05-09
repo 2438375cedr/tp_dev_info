@@ -245,6 +245,7 @@ public class RectangleTest {
         affectez 7 à la largeur de r2
         et montrea que r1 et r2 n'ont pas la même largeur
          */
+
         r1.setLargeur(9);
         r2.setLargeur(9);
         assertTrue(r1.memeLargeur(r2));
@@ -259,6 +260,7 @@ public class RectangleTest {
         affectez 7 à l hauteur de r2
         et montrea que r1 et r2 n'ont pas la même largeur
          */
+
         r1.setHauteur(9);
         r2.setHauteur(9);
         assertTrue(r1.memeHauteur(r2));
