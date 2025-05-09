@@ -110,7 +110,7 @@ public class Rectangle {
     @Override
     public boolean equals(Object pRec)
     {
-        return pRec != null && pRec instanceof Rectangle
+        return pRec instanceof Rectangle
                 && this.largeur == ((Rectangle) pRec).largeur
                 && this.hauteur == ((Rectangle) pRec).hauteur
                 && this.couleur.equals(((Rectangle) pRec).couleur);

@@ -90,8 +90,8 @@ public class TriangleTest {
 
     @Test
     public void testPerimetre() {
-        assertEquals(23, t1.perimetre());  // Expected value is now 25 as per the formula
-        assertEquals(16, t2.perimetre());  // Check with another set of values
+        assertEquals(23, t1.perimetre());
+        assertEquals(16, t2.perimetre());
         assertEquals(12, t3.perimetre());
     }
 

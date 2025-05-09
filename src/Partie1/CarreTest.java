@@ -11,11 +11,11 @@ public class CarreTest {
     @BeforeEach
     public void setUp() {
         c0 = new Carre();
-        c1 = new Carre(7, "vert");               // valide
-        c2 = new Carre(Carre.DIM_MIN - 1, "bleu"); // côté invalide
-        c3 = new Carre(Carre.DIM_MAX + 1, "bleu"); // côté invalide
-        c4 = new Carre(8, null);                 // couleur invalide
-        c5 = new Carre(9, "ver");                // couleur invalide
+        c1 = new Carre(7, "vert");
+        c2 = new Carre(Carre.DIM_MIN - 1, "bleu");
+        c3 = new Carre(Carre.DIM_MAX + 1, "bleu");
+        c4 = new Carre(8, null);
+        c5 = new Carre(9, "ver");
         c6 = new Carre(10, "orangeRougePale");
     }
 
@@ -84,26 +84,26 @@ public class CarreTest {
 
     @Test
     void aire() {
-        assertEquals(49, c1.aire()); // 7 x 7
-        assertEquals(100, c6.aire()); // 10 x 10
+        assertEquals(49, c1.aire());
+        assertEquals(100, c6.aire());
     }
 
     @Test
     void perimetre() {
-        assertEquals(28, c1.perimetre()); // 4 x 7
-        assertEquals(40, c6.perimetre()); // 4 x 10
+        assertEquals(28, c1.perimetre());
+        assertEquals(40, c6.perimetre());
     }
 
     @Test
     void testEquals() {
         Carre c7 = new Carre(7, "vert");
-        assertTrue(c1.equals(c7));
+        assertEquals(c1, c7);
         Carre c8 = new Carre(8, "vert");
-        assertFalse(c1.equals(c8));
+        assertNotEquals(c1, c8);
         Carre c9 = new Carre(7, "bleu");
-        assertFalse(c1.equals(c9));
-        assertFalse(c1.equals(null));
-        assertFalse(c1.equals("some string"));
+        assertNotEquals(c1, c9);
+        assertNotEquals(null, c1);
+        assertNotEquals("some string", c1);
     }
 }
 

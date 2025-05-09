@@ -65,9 +65,10 @@ public class Cercle {
     @Override
     public boolean equals(Object pRayon)
     {
-        return pRayon != null && pRayon instanceof Cercle
+        return pRayon instanceof Cercle
                 && this.rayon == ((Cercle) pRayon).rayon
                 && this.couleur.equals(((Cercle) pRayon).couleur);
+
 
     }
 

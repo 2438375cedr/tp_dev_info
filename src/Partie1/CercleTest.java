@@ -17,7 +17,7 @@ public class CercleTest {
 
     @BeforeEach
     void setUp() {
-        c1 = new Cercle(10, "bleu"); // valeurs valides
+        c1 = new Cercle(10, "bleu");
 
         // Tests sur rayon
         c2 = new Cercle(Cercle.RAYON_MIN - 1, "rouge");
@@ -28,7 +28,7 @@ public class CercleTest {
         // Tests sur couleur
         c6 = new Cercle(10, null);
         c7 = new Cercle(10, "rou");
-        c8 = new Cercle(10, "orangeRougeFoncee"); // longueur > 15
+        c8 = new Cercle(10, "orangeRougeFoncee");
     }
 
     @Test
@@ -56,8 +56,8 @@ public class CercleTest {
         c1.setRayon(12); // valeur valide
         assertEquals(12, c1.getRayon());
 
-        c1.setRayon(Cercle.RAYON_MIN - 1); // invalide
-        assertEquals(12, c1.getRayon()); // reste inchangé
+        c1.setRayon(Cercle.RAYON_MIN - 1);
+        assertEquals(12, c1.getRayon());
     }
 
     @Test
